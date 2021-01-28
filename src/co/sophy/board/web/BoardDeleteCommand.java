@@ -19,8 +19,11 @@ public class BoardDeleteCommand implements Command {
 		
 		request.setAttribute("vo", vo);
 		int n=dao.delete(vo);
+		String viewPage=null;
+		if(n==0)
+			viewPage="views/board/boardView.jsp";
 		
-		return "views/board/boardView.jsp";
+		return viewPage;
 	}
 
 }

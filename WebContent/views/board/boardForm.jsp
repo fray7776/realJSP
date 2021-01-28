@@ -21,11 +21,11 @@
 </head>
 <body>
 <div align="center"><h1>VIEW BOARD</h1></div>
-<div>
+ <div>
 	<form id="frm" name="frm" action="boardView.do" method="post">
 		<input type="hidden" id="bId" name="bId">
 	</form>
-</div>
+</div> 
 <div align="center">
 		<table border = "1">
 			<tr>

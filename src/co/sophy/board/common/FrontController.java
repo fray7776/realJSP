@@ -33,7 +33,7 @@ public class FrontController extends HttpServlet {
 		map.put("/newBoard.do", new NewBoardCommand());
 		map.put("/WriteNewBoard.do", new WriteNewBoardCommand()); //글등록
 		map.put("/boardView.do", new BoardView()); //글 상세보기
-		map.put("/boardDelete.do", new BoardDeleteCommand()); //글 상세보기
+		map.put("/boardEdit.do", new BoardDeleteCommand()); //글 상세보기
 	}
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
